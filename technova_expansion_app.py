@@ -17,9 +17,9 @@ tab1, tab2, tab3 = st.tabs(["Simulator", "Scenarios", "Educational Resources"])
 with tab1:
     st.header("Interactive Cost and Profit Simulator")
     st.sidebar.header("Adjust Exchange Rates")
-    exchange_rates['Brazil'] = st.sidebar.slider("Brazil (BRL/USD)", 1.0, 6.0, 3.0)
+    exchange_rates['Brazil'] = st.sidebar.slider("Brazil (BRL/USD)", 1.0, 6.0, 2.0)
     exchange_rates['Germany'] = st.sidebar.slider("Germany (EUR/USD)", 0.5, 1.2, 0.9)
-    exchange_rates['India'] = st.sidebar.slider("India (INR/USD)", 25.0, 100.0, 60.0)
+    exchange_rates['India'] = st.sidebar.slider("India (INR/USD)", 25.0, 100.0, 70.0)
 
     usd_costs = {country: local_costs[country] / exchange_rates[country] for country in exchange_rates}
     usd_prices = {country: selling_prices[country] / exchange_rates[country] for country in exchange_rates}
