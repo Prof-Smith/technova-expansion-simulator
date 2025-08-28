@@ -6,7 +6,7 @@ import seaborn as sns
 
 # Sample data
 exchange_rates = {'Brazil': 2.0, 'Germany': 1.0, 'India': 50.0}
-local_costs = {'Brazil': 100.0, 'Germany': 75.0, 'India': 10000.0}
+local_costs = {'Brazil': 100.0, 'Germany': 75.0, 'India': 7500.0}
 selling_prices = {'Brazil': 150.0, 'Germany': 130.0, 'India': 11000.0}
 
 st.title("TechNova Inc. International Expansion Simulator")
