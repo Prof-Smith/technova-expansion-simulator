@@ -19,7 +19,7 @@ with tab1:
     st.sidebar.header("Adjust Exchange Rates")
     exchange_rates['Brazil'] = st.sidebar.slider("Brazil (BRL/USD)", 1.0, 6.0, 3.0)
     exchange_rates['Germany'] = st.sidebar.slider("Germany (EUR/USD)", 0.5, 1.2, 0.9)
-    exchange_rates['India'] = st.sidebar.slider("India (INR/USD)", 25.0, 90.0, 50.0)
+    exchange_rates['India'] = st.sidebar.slider("India (INR/USD)", 25.0, 100.0, 60.0)
 
     usd_costs = {country: local_costs[country] / exchange_rates[country] for country in exchange_rates}
     usd_prices = {country: selling_prices[country] / exchange_rates[country] for country in exchange_rates}
