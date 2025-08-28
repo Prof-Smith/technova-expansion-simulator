@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Sample data
-exchange_rates = {'Brazil': 2.0, 'Germany': 0.9, 'India': 83.0}
+exchange_rates = {'Brazil': 2.0, 'Germany': 1.0, 'India': 50.0}
 local_costs = {'Brazil': 100.0, 'Germany': 75.0, 'India': 5000.0}
 selling_prices = {'Brazil': 150.0, 'Germany': 130.0, 'India': 11000.0}
 
@@ -17,9 +17,9 @@ tab1, tab2, tab3 = st.tabs(["Simulator", "Scenarios", "Educational Resources"])
 with tab1:
     st.header("Interactive Cost and Profit Simulator")
     st.sidebar.header("Adjust Exchange Rates")
-    exchange_rates['Brazil'] = st.sidebar.slider("Brazil (BRL/USD)", 4.5, 6.0, 5.2)
-    exchange_rates['Germany'] = st.sidebar.slider("Germany (EUR/USD)", 0.8, 1.1, 0.9)
-    exchange_rates['India'] = st.sidebar.slider("India (INR/USD)", 75.0, 90.0, 83.0)
+    exchange_rates['Brazil'] = st.sidebar.slider("Brazil (BRL/USD)", 1.0, 6.0, 3.0)
+    exchange_rates['Germany'] = st.sidebar.slider("Germany (EUR/USD)", 0.5, 1.2, 0.9)
+    exchange_rates['India'] = st.sidebar.slider("India (INR/USD)", 25.0, 90.0, 50.0)
 
     usd_costs = {country: local_costs[country] / exchange_rates[country] for country in exchange_rates}
     usd_prices = {country: selling_prices[country] / exchange_rates[country] for country in exchange_rates}
