@@ -5,8 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Sample data
-exchange_rates = {'Brazil': 5.2, 'Germany': 0.9, 'India': 83.0}
-local_costs = {'Brazil': 100.0, 'Germany': 75.0, 'India': 6000.0}
+exchange_rates = {'Brazil': 2.0, 'Germany': 0.9, 'India': 83.0}
+local_costs = {'Brazil': 100.0, 'Germany': 75.0, 'India': 5000.0}
 selling_prices = {'Brazil': 150.0, 'Germany': 130.0, 'India': 11000.0}
 
 st.title("TechNova Inc. International Expansion Simulator")
